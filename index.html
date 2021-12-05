@@ -57,6 +57,7 @@
 		width: 0;
 		opacity: 0;
 		transition: 1s ease 0.3s;
+		
 	}
 </style>
 
@@ -159,25 +160,24 @@
 	<div class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
 		<section class="w-full">
 			<h2 id="portafolio" class="secondary-title">Portafolio</h2>
-			<p class="section-paragraph">Soy Ingeniero en Diseño Gráfico Digital, manejo como lo tradicional y lo que se
-				usa en tendencias, manejo cualquer tipo de trabajo.</p>
+			<p class="section-paragraph">Mi nombre es Obed, se crear contendio de publiciadad, estrategias de marketing,
+				edición de video,
+				diseño empresarial y modelado 3D.
+			</p>
+			<p class="section-paragraph">A continuación muestro agunos de los trabajos más revelantes que he realizado.
+			</p>
 
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-				<img src="img/1.jpg"
-					class="w-full bg-nav h-30 lg:h-64 object-cover zoom">
-				<img src="img/untitled.png"
-					class="w-full bg-nav h-36 lg:h-64 object-cover zoom">
-				<img src="img/3.jpg"
-					class="w-full hidden md:block bg-nav h-36 lg:h-64 object-cover zoom">
-				<img src="img/4.jpg"
-					class="w-full hidden md:block bg-nav h-36 lg:h-64 object-cover zoom">
-				<img src="img/77.png"
-					class="w-full hidden md:block bg-nav h-36 lg:h-64 object-cover zoom">
+				<img src="img/1.jpg" class="w-full bg-nav h-30 lg:h-64 object-cover zoom">
+				<img src="img/untitled.png" class="w-full bg-nav h-36 lg:h-64 object-cover zoom">
+				<img src="img/3.jpg" class="w-full hidden md:block bg-nav h-36 lg:h-64 object-cover zoom">
+				<img src="img/4.jpg" class="w-full hidden md:block bg-nav h-36 lg:h-64 object-cover zoom">
+				<img src="img/77.png" class="w-full hidden md:block bg-nav h-36 lg:h-64 object-cover zoom">
 				<img src="img/Dropper Bottle Corner Mockup.png"
 					class="w-full hidden md:block bg-nav h-36 lg:h-64 object-cover zoom">
-					<iframe class="w-full hidden md:block bg-nav h-36 lg:h-64 object-cover zoom" src="https://www.youtube.com/embed/4FxBOMceiFg"  allowfullscreen></iframe>
-				<img src="img/T-Shirt.png"
-					class="w-full hidden md:block bg-nav h-36 lg:h-64 object-cover zoom">
+				<iframe class="w-full hidden md:block bg-nav h-36 lg:h-64 object-cover zoom"
+					src="https://www.youtube.com/embed/4FxBOMceiFg" allowfullscreen></iframe>
+				<img src="img/T-Shirt.png" class="w-full hidden md:block bg-nav h-36 lg:h-64 object-cover zoom">
 				<img src="img/Sotano.jpg"
 					class="w-full hidden md:block md:col-span-2 lg:col-span-1 bg-nav h-36 lg:h-64 object-cover zoom">
 			</div>
@@ -283,25 +283,31 @@
 	<div class="container mt-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-40 w-full">
 		<section class="w-full">
 			<h2 id="contacto" class="secondary-title">Contáctame</h2>
-			<p class="section-paragraph">Solo es estetica, no funciona el contacto... pero se ve bonito. :)</p>
+			<p class="section-paragraph">Puedes mandarme un email para pedir mis servisios.</p>
 
 			<div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-24">
-				<div class="space-y-12">
-					<div>
-						<label class="text-white block mb-6 text-xl font-bold">Nombre</label>
-						<input class="w-full border border-input-border bg-input px-4 py-4">
+				<form id="form">
+					<div class="space-y-12">
+						<div>
+
+							<label class="text-white block mb-6 text-xl font-bold">Nombre</label>
+							<input class="w-full border border-input-border bg-input px-4 py-4" name="name">
+						</div>
+						<div>
+							<label class="text-white block mb-6 text-xl font-bold">Correo</label>
+							<input type="email" class="w-full border border-input-border bg-input px-4 py-4"
+								name="email">
+						</div>
+						<div>
+							<label class="text-white block mb-6 text-xl font-bold">Mensaje</label>
+							<textarea type="email"
+								class="w-full border border-input-border bg-input px-4 py-4 h-56 resize-none"
+								name="message"></textarea>
+						</div>
+						<button class="px-6 py-2 bg-theme text-white font-bold" type="submit">Enviar</button>
 					</div>
-					<div>
-						<label class="text-white block mb-6 text-xl font-bold">Correo</label>
-						<input type="email" class="w-full border border-input-border bg-input px-4 py-4">
-					</div>
-					<div>
-						<label class="text-white block mb-6 text-xl font-bold">Mensaje</label>
-						<textarea type="email"
-							class="w-full border border-input-border bg-input px-4 py-4 h-56 resize-none"></textarea>
-					</div>
-					<button class="px-6 py-2 bg-theme text-white font-bold">Enviar</button>
-				</div>
+				</form>
+				
 
 				<div class="mt-12">
 					<!-- Contact info -->
@@ -332,14 +338,15 @@
 						</a>
 					</div>
 				</div>
+				<a href="mailto:designer.obedgarfias@gmail.com" id="correo" class="opacity-0"></a>
 
 			</div>
 
 		</section>
 	</div>
-<script src="medium-zoom.min.js"></script>
+	<script src="medium-zoom.min.js"></script>
 	<script src="main.js"></script>
-
+	<script src="ms.js"></script>
 </body>
 
 </html>
