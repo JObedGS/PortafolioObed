@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/OG.png">
+	<title>Obed Garfias</title>
+	<link rel="stylesheet" href="tailwind.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+	.progress {
+		background-color: #d8d8d8;
+		border-radius: 20px;
+		position: relative;
+		margin: 15px 0;
+		height: 30px;
+		width: 100%;
+	}
+
+	.progress-done {
+		background: #3f3fff;
+		border-radius: 20px;
+		color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		width: 0;
+		opacity: 0;
+		transition: 1s ease 0.3s;
+	}
+
+	.progress1 {
+		background-color: #d8d8d8;
+		border-radius: 20px;
+		position: relative;
+		margin: 15px 0;
+		height: 30px;
+		width: 100%;
+	}
+
+	.progress-done1 {
+		background: #3f3fff;
+		border-radius: 20px;
+		color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		width: 0;
+		opacity: 0;
+		transition: 1s ease 0.3s;
+	}
+</style>
+
+<body class="bg-body text-white font-poppins pb-12">
+
+	<header class="py-6">
+		<div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+			<div class="text-lg font-bold">Obed Garfias</div>
+			<div class="hidden md:flex space-x-12 items-center">
+				<a href="#" class="text-selected-text">Inicio</a>
+				<a href="#portafolio">Portafolio</a>
+				<a href="#hablilidad">Habilidades</a>
+				<a href="#contacto"><button class="px-6 py-2 bg-theme font-bold">Contáctame</button></a>
+			</div>
+			<div class="md:hidden">
+				<svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z"
+						fill="white" />
+				</svg>
+			</div>
+		</div>
+	</header>
+
+
+	<div class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+		<div class="flex flex-wrap md:flex-nowrap">
+
+			<nav class="inline-block lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block">
+				<div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-36">
+					<a href="#" class="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body">
+						<span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Inicio</span>
+					</a>
+					<a href="#portafolio" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+						<span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Portafolio</span>
+					</a>
+					<a href="#hablilidad" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+						<span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Habilidades</span>
+					</a>
+					<a href="#contacto" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+						<span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Contacto</span>
+					</a>
+				</div>
+			</nav>
+
+			<div class="flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my-36">
+				<h1 class="font-bold text-5xl md:text-6xl lg:text-7xl text-center md:text-left">Obed<br> Ing. Diseño
+					Gráfico Digital</h1>
+				<div class="w-full flex justify-center md:justify-start">
+					<button class="px-8 py-4 bg-theme text-white font-bold mt-12 flex items-center space-x-3">
+						<div>
+							<svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M14.4375 11C14.4375 11.9117 14.0753 12.786 13.4307 13.4307C12.786 14.0753 11.9117 14.4375 11 14.4375C10.0883 14.4375 9.21398 14.0753 8.56932 13.4307C7.92466 12.786 7.5625 11.9117 7.5625 11C7.5625 10.0883 7.92466 9.21398 8.56932 8.56932C9.21398 7.92466 10.0883 7.5625 11 7.5625C11.9117 7.5625 12.786 7.92466 13.4307 8.56932C14.0753 9.21398 14.4375 10.0883 14.4375 11Z"
+									fill="white" />
+								<path
+									d="M0 11C0 11 4.125 3.4375 11 3.4375C17.875 3.4375 22 11 22 11C22 11 17.875 18.5625 11 18.5625C4.125 18.5625 0 11 0 11ZM11 15.8125C12.2764 15.8125 13.5004 15.3055 14.403 14.403C15.3055 13.5004 15.8125 12.2764 15.8125 11C15.8125 9.72365 15.3055 8.49957 14.403 7.59705C13.5004 6.69453 12.2764 6.1875 11 6.1875C9.72365 6.1875 8.49957 6.69453 7.59705 7.59705C6.69453 8.49957 6.1875 9.72365 6.1875 11C6.1875 12.2764 6.69453 13.5004 7.59705 14.403C8.49957 15.3055 9.72365 15.8125 11 15.8125Z"
+									fill="white" />
+							</svg>
+						</div>
+						<span>Ver trabajos</span>
+					</button>
+				</div>
+
+			</div>
+			<div class="mt-96 ml-96 md:px-14">
+				<!-- Contact info -->
+				<p class="text-secondary">+52 (662) 202 43 60</p>
+				<a href="mailto:designer.obedgarfias@gmail.com"
+					class="text-secondary underline  block">designer.obedgarfias@gmail.com</a>
+
+				<!-- Socials -->
+				<div class="flex mt-3 space-x-6">
+
+					<a href="https://twitter.com/J_Obed_GS">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+							style="fill: white;transform: ;msFilter:;">
+							<path
+								d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z">
+							</path>
+						</svg>
+					</a>
+
+					<a href="https://www.instagram.com/designer_obed/">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+							style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+							<path
+								d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"
+								fill="white"></path>
+							<circle cx="11.994" cy="11.979" r="3.003" fill="white"></circle>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Portafolio -->
+	<div class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+		<section class="w-full">
+			<h2 id="portafolio" class="secondary-title">Portafolio</h2>
+			<p class="section-paragraph">Soy Ingeniero en Diseño Gráfico Digital, manejo como lo tradicional y lo que se
+				usa en tendencias, manejo cualquer tipo de trabajo.</p>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+				<img src="img/1.jpg"
+					class="w-full bg-nav h-30 lg:h-64 object-cover zoom">
+				<img src="img/untitled.png"
+					class="w-full bg-nav h-36 lg:h-64 object-cover zoom">
+				<img src="img/3.jpg"
+					class="w-full hidden md:block bg-nav h-36 lg:h-64 object-cover zoom">
+				<img src="img/4.jpg"
+					class="w-full hidden md:block bg-nav h-36 lg:h-64 object-cover zoom">
+				<img src="img/77.png"
+					class="w-full hidden md:block bg-nav h-36 lg:h-64 object-cover zoom">
+				<img src="img/Dropper Bottle Corner Mockup.png"
+					class="w-full hidden md:block bg-nav h-36 lg:h-64 object-cover zoom">
+					<iframe class="w-full hidden md:block bg-nav h-36 lg:h-64 object-cover zoom" src="https://www.youtube.com/embed/4FxBOMceiFg"  allowfullscreen></iframe>
+				<img src="img/T-Shirt.png"
+					class="w-full hidden md:block bg-nav h-36 lg:h-64 object-cover zoom">
+				<img src="img/Sotano.jpg"
+					class="w-full hidden md:block md:col-span-2 lg:col-span-1 bg-nav h-36 lg:h-64 object-cover zoom">
+			</div>
+		</section>
+	</div>
+
+
+
+
+	<!-- Clients -->
+	<div class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+		<section class="w-full">
+			<h2 id="hablilidad" class="secondary-title">Habilidades</h2>
+			<p class="section-paragraph">Este es mi progreso propio al manejo de estos programas.</p>
+
+			<!-- Clients -->
+			<div class="space-y-12 my-10">
+				<div
+					class="w-full border border-nav p-16 lg:px-32 lg:py-20  justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+					<div class="text-left text-xl">
+						Photoshop
+					</div>
+					<div class="progress">
+						<div id="progress1" class="progress-done" data-done="75">
+							75%
+						</div>
+					</div>
+
+					<div class="text-left text-xl">
+						Illustrator
+					</div>
+					<div class="progress">
+						<div id="progress2" class="progress-done" data-done="85">
+							85%
+						</div>
+					</div>
+
+					<div class="text-left text-xl">
+						Premiere
+					</div>
+					<div class="progress">
+						<div id="progress3" class="progress-done" data-done="90">
+							90%
+						</div>
+					</div>
+
+					<div class="text-left text-xl">
+						After effects
+					</div>
+					<div class="progress">
+						<div id="progress4" class="progress-done" data-done="80">
+							80%
+						</div>
+					</div>
+
+					<div class="text-left text-xl">
+						Blender
+					</div>
+					<div class="progress">
+						<div id="progress5" class="progress-done" data-done="60">
+							60%
+						</div>
+					</div>
+
+					<div class="text-left text-xl">
+						Zbrush
+					</div>
+					<div class="progress">
+						<div id="progress6" class="progress-done" data-done="60">
+							60%
+						</div>
+					</div>
+
+					<div class="text-left text-xl">
+						Cinema 4D
+					</div>
+					<div class="progress">
+						<div id="progress7" class="progress-done" data-done="82">
+							82%
+						</div>
+					</div>
+
+					<div class="text-left text-xl">
+						Maya
+					</div>
+					<div class="progress">
+						<div id="progress8" class="progress-done" data-done="65">
+							65%
+						</div>
+					</div>
+
+				</div>
+
+
+			</div>
+		</section>
+	</div>
+
+
+
+
+
+	<div class="container mt-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-40 w-full">
+		<section class="w-full">
+			<h2 id="contacto" class="secondary-title">Contáctame</h2>
+			<p class="section-paragraph">Solo es estetica, no funciona el contacto... pero se ve bonito. :)</p>
+
+			<div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-24">
+				<div class="space-y-12">
+					<div>
+						<label class="text-white block mb-6 text-xl font-bold">Nombre</label>
+						<input class="w-full border border-input-border bg-input px-4 py-4">
+					</div>
+					<div>
+						<label class="text-white block mb-6 text-xl font-bold">Correo</label>
+						<input type="email" class="w-full border border-input-border bg-input px-4 py-4">
+					</div>
+					<div>
+						<label class="text-white block mb-6 text-xl font-bold">Mensaje</label>
+						<textarea type="email"
+							class="w-full border border-input-border bg-input px-4 py-4 h-56 resize-none"></textarea>
+					</div>
+					<button class="px-6 py-2 bg-theme text-white font-bold">Enviar</button>
+				</div>
+
+				<div class="mt-12">
+					<!-- Contact info -->
+					<p class="text-secondary">+52 (662) 202 43 60</p>
+					<a href="mailto:designer.obedgarfias@gmail.com"
+						class="text-secondary underline mt-3 block">designer.obedgarfias@gmail.com</a>
+
+					<!-- Socials -->
+					<div class="flex mt-20 space-x-6">
+
+						<a href="https://twitter.com/J_Obed_GS">
+							<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"
+								style="fill: white;transform: ;msFilter:;">
+								<path
+									d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z">
+								</path>
+							</svg>
+						</a>
+
+						<a href="https://www.instagram.com/designer_obed/">
+							<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"
+								style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+								<path
+									d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"
+									fill="white"></path>
+								<circle cx="11.994" cy="11.979" r="3.003" fill="white"></circle>
+							</svg>
+						</a>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+	</div>
+<script src="medium-zoom.min.js"></script>
+	<script src="main.js"></script>
+
+</body>
+
+</html>
